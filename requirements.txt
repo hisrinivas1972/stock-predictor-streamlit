@@ -4,3 +4,6 @@ prophet
 pandas
 matplotlib
 requests
+feedparser
+python-dotenv
+google-generativeai
