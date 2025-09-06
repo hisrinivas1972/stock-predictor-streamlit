@@ -42,6 +42,10 @@ else:
 timeframe = st.sidebar.selectbox("Forecast Timeframe", ['1 day', '1 week', '1 month', '3 months'])
 predict_button = st.sidebar.button("🔮 Predict Price")
 
+# Add examples here:
+st.caption("Examples for input: AAPL, RELIANCE.NS, VOD.L, EURUSD=X, BTC-USD, GC=F")
+
+
 # Main section
 if predict_button and valid_ticker:
     try:
@@ -63,10 +67,6 @@ if predict_button and valid_ticker:
 
         st.success(f"📊 Predicted: {currency} {predicted:.2f}")
         st.caption(f"Confidence: {currency} {lower:.2f} - {upper:.2f}")
-
-        # Add examples here:
-        st.caption("Examples for input: AAPL, RELIANCE.NS, VOD.L, EURUSD=X, BTC-USD, GC=F")
-
 
         trend = get_recent_trend(df)
         if trend:
