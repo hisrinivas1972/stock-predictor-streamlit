@@ -20,6 +20,21 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Disclaimer below the heading
+st.markdown(
+    """
+    <div style='text-align: center; color: red; margin-top: 20px;'>
+    ⚠️ <strong>DISCLAIMER</strong><br>
+    This application uses a generative AI model to produce speculative stock price predictions.  
+    All information provided is for educational and demonstrative purposes only.  
+    It does not constitute financial advice, and should not be used for making actual investment decisions.  
+    The generated data is fictional and does not reflect real market conditions.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Sidebar input
 st.sidebar.title("🔍 Inputs")
 search_input = st.sidebar.text_input("Enter ticker or company name", value="AAPL")
