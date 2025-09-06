@@ -118,15 +118,15 @@ if predict_button and valid_ticker:
     except Exception as e:
         st.error(f"❌ Error: {e}")
 
-    st.markdown(
-        """
-        <hr>
-        <div style='color: gray; font-size: 0.9rem; max-width: 700px; margin: 20px auto; text-align: center;'>
-            This application uses a generative AI model to produce speculative stock price predictions.  
-            All information provided is for educational and demonstrative purposes only.  
-            It does not constitute financial advice, and should not be used for making actual investment decisions.  
-            The generated data is fictional and does not reflect real market conditions.
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+st.markdown(
+    """
+    <hr>
+    <div style='color: red; font-size: 1rem; max-width: 700px; margin: 20px auto; text-align: justify;'> 
+        This application uses a generative AI model to produce speculative stock price predictions.  
+        All information provided is for educational and demonstrative purposes only.  
+        It does not constitute financial advice, and should not be used for making actual investment decisions.  
+        The generated data is fictional and does not reflect real market conditions.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
