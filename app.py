@@ -40,11 +40,8 @@ else:
 
 # Timeframe selection
 timeframe = st.sidebar.selectbox("Forecast Timeframe", ['1 day', '1 week', '1 month', '3 months'])
+Examples for input: AAPL, RELIANCE.NS, VOD.L, EURUSD=X, BTC-USD, GC=F
 predict_button = st.sidebar.button("🔮 Predict Price")
-
-# Add examples here:
-st.caption("Examples for input: AAPL, RELIANCE.NS, VOD.L, EURUSD=X, BTC-USD, GC=F")
-
 
 # Main section
 if predict_button and valid_ticker:
