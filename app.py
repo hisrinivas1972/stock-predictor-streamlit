@@ -14,12 +14,12 @@ st.set_page_config(page_title="📈 Stock Predictor", layout="wide")
 st.markdown(
     """
     <h1 style='text-align: center;'>
-        📈 Multi-Asset Price Predictor:<br>Stocks, Crypto, Forex, Metals & Crude Oil
+        📈 <strong>WORLD-X</strong>: Multi-Asset Price Predictor<br>
+        💹 Stocks 📊 Crypto 💱 Forex ⚙️ Metals 🛢️ Crude Oil — Global Markets, One Platform 🌍✨
     </h1>
     """,
     unsafe_allow_html=True
 )
-
 # Disclaimer below the heading
 st.markdown(
     """
