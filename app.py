@@ -9,7 +9,7 @@ from utils.exchange_detection import detect_exchange
 from utils.trend_analysis import get_recent_trend
 from utils.forecasting import make_forecast
 
-st.set_page_config(page_title="📈 Stock Predictor", layout="centered")
+st.set_page_config(page_title="📈 Stock Predictor", layout="wide")
 # st.title("📈 Multi-Asset Price Predictor: Stocks, Crypto, Forex, Metals & Crude Oil")
 st.markdown(
     """
