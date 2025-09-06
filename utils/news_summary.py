@@ -1,11 +1,28 @@
 import feedparser
 import google.generativeai as genai
+import urllib.parse
 
 def get_news_headlines(company_name, max_items=5):
     """
     Fetches recent news headlines related to the company/ticker.
+    Handles special commodity tickers and URL encoding.
     """
-    rss_url = f"https://news.google.com/rss/search?q={company_name.replace(' ', '+')}+stock"
+    commodities = {
+        "CL=F": "Crude Oil",
+        "BRN=F": "Brent Oil",
+        "GC=F": "Gold",
+        "SI=F": "Silver",
+        # add more commodities if needed
+    }
+    
+    # Use friendly keyword for commodities to avoid ambiguous news
+    if company_name.upper() in commodities:
+        query = commodities[company_name.upper()].replace(' ', '+')
+    else:
+        # URL encode for safe query string (handle = sign and others)
+        query = urllib.parse.quote(company_name)
+    
+    rss_url = f"https://news.google.com/rss/search?q={query}+stock"
     feed = feedparser.parse(rss_url)
     headlines = [entry['title'] for entry in feed.entries[:max_items]]
     return headlines
