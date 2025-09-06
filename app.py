@@ -40,7 +40,13 @@ else:
 
 # Timeframe selection
 timeframe = st.sidebar.selectbox("Forecast Timeframe", ['1 day', '1 week', '1 month', '3 months'])
-Examples for input: AAPL, RELIANCE.NS, VOD.L, EURUSD=X, BTC-USD, GC=F
+st.sidebar.markdown(
+    """
+    **Examples for Input:**  
+    AAPL, RELIANCE.NS, VOD.L,  
+    EURUSD=X, BTC-USD, GC=F
+    """
+)
 predict_button = st.sidebar.button("🔮 Predict Price")
 
 # Main section
