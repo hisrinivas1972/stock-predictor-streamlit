@@ -8,11 +8,14 @@ def get_news_headlines(company_name, max_items=5):
     Handles special commodity tickers and URL encoding.
     """
     commodities = {
-        "CL=F": "Crude Oil",
-        "BRN=F": "Brent Oil",
         "GC=F": "Gold",
         "SI=F": "Silver",
-        # add more commodities if needed
+        "HG=F": "Copper",
+        "PL=F": "Platinum",
+        "CL=F": "Crude Oil",
+        "BRN=F": "Brent Oil",
+        "HO=F": "Heating Oil",
+        "RB=F": "RBOB Gasoline"        # add more commodities if needed
     }
     
     # Use friendly keyword for commodities to avoid ambiguous news
