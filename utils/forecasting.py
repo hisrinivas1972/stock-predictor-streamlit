@@ -6,8 +6,12 @@ def make_forecast(ticker, timeframe):
     stock = yf.Ticker(ticker)
     info = stock.info
     currency = info.get("currency", "USD")
+
     df = stock.history(period="1y")[["Close"]].reset_index()
     df.columns = ["ds", "y"]
+
+    # ⛏️ Remove timezone
+    df['ds'] = df['ds'].dt.tz_localize(None)
 
     model = Prophet(daily_seasonality=True)
     model.fit(df)
