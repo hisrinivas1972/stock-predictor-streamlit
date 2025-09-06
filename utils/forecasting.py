@@ -1,3 +1,5 @@
+# utils/forecasting.py
+
 import pandas as pd
 from prophet import Prophet
 import yfinance as yf
@@ -9,9 +11,7 @@ def make_forecast(ticker, timeframe):
 
     df = stock.history(period="1y")[["Close"]].reset_index()
     df.columns = ["ds", "y"]
-
-    # ⛏️ Remove timezone
-    df['ds'] = df['ds'].dt.tz_localize(None)
+    df['ds'] = df['ds'].dt.tz_localize(None)  # 💥 Remove timezone
 
     model = Prophet(daily_seasonality=True)
     model.fit(df)
