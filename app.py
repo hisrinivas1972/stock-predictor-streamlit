@@ -67,7 +67,8 @@ if predict_button and valid_ticker:
         trend = get_recent_trend(df)
         if trend:
             emoji = "📈" if trend == "positive momentum" else "📉"
-            st.info(f"Recent trend: **{trend}** {emoji}")
+            st.info(f"Recent **past trend**: {trend} {emoji}")
+            st.caption("📌 Trend shows the past 14 days; prediction forecasts the future price.")
 
         # Plot
         fig, ax = plt.subplots(figsize=(12, 6))
