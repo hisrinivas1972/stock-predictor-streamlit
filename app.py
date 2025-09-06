@@ -14,9 +14,12 @@ st.set_page_config(page_title="📈 Stock Predictor", layout="wide")
 st.markdown(
     """
     <h1 style='text-align: center;'>
-        📈 <strong>WORLD-X</strong>: Multi-Asset Price Predictor<br>
-        💹 Stocks 📊 Crypto 💱 ₹ Forex 🪙 Metals 🛢️ Crude Oil — Global Markets, One Platform 🌍✨
+        📈 <strong>WORLD-X</strong>: Multi-Asset Price Predictor
     </h1>
+    <h3 style='text-align: center; font-weight: normal;'>
+        Stocks | Crypto | Forex $/₹ | Metals | Crude Oil
+    </h3>
+    <p style='text-align: center;'>🌍 One Platform for Global Markets</p>
     """,
     unsafe_allow_html=True
 )
