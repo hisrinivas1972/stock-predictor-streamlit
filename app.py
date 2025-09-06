@@ -11,6 +11,14 @@ from utils.forecasting import make_forecast
 
 st.set_page_config(page_title="📈 Stock Predictor", layout="centered")
 st.title("📈 Multi-Asset Price Predictor: Stocks, Crypto, Forex, Metals & Crude Oil")
+st.markdown(
+    """
+    <h2 style='text-align: center;'>
+        📈 Multi-Asset Price Predictor:<br>Stocks, Crypto, Forex, Metals & Crude Oil
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
 
 # Sidebar input
 st.sidebar.title("🔍 Inputs")
