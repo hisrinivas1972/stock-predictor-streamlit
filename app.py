@@ -10,7 +10,7 @@ from utils.trend_analysis import get_recent_trend
 from utils.forecasting import make_forecast
 
 st.set_page_config(page_title="📈 Stock Predictor", layout="centered")
-st.title("📈 Stock / Crypto / Forex Predictor")
+st.title("📈 Multi-Asset Price Predictor: Stocks, Crypto, Forex, Metals & Crude Oil")
 
 # Sidebar input
 st.sidebar.title("🔍 Inputs")
