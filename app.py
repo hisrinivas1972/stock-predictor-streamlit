@@ -17,7 +17,7 @@ st.markdown(
         📈 <strong>WORLD-X</strong>: Multi-Asset Price Predictor
     </h1>
     <h3 style='text-align: center; font-weight: normal;'>
-        Stocks | Crypto | Forex $/₹ | Metals | Crude Oil
+        Stocks | Crypto | Forex ₹ | Metals | Crude Oil
     </h3>
     <p style='text-align: center;'>🌍 One Platform for Global Markets</p>
     """,
