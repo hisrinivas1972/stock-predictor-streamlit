@@ -27,16 +27,11 @@ st.markdown(
 st.markdown(
     """
     <div style='text-align: center; color: red; margin-top: 20px;'>
-    ⚠️ <strong>DISCLAIMER</strong><br>
-    This application uses a generative AI model to produce speculative stock price predictions.  
-    All information provided is for educational and demonstrative purposes only.  
-    It does not constitute financial advice, and should not be used for making actual investment decisions.  
-    The generated data is fictional and does not reflect real market conditions.
+        ⚠️ <strong>DISCLAIMER</strong> 👇
     </div>
     """,
     unsafe_allow_html=True
 )
-
 
 # Sidebar input
 st.sidebar.title("🔍 Inputs")
@@ -122,3 +117,16 @@ if predict_button and valid_ticker:
 
     except Exception as e:
         st.error(f"❌ Error: {e}")
+
+    st.markdown(
+        """
+        <hr>
+        <div style='color: gray; font-size: 0.9rem; max-width: 700px; margin: 20px auto; text-align: center;'>
+            This application uses a generative AI model to produce speculative stock price predictions.  
+            All information provided is for educational and demonstrative purposes only.  
+            It does not constitute financial advice, and should not be used for making actual investment decisions.  
+            The generated data is fictional and does not reflect real market conditions.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
