@@ -69,18 +69,6 @@ if api_key:
 else:
     st.sidebar.info("Enter your Google API Key above to enable News & Summary")
 
-st.sidebar.markdown(
-    """
-    **Examples for Input:**  
-    AAPL, RELIANCE.NS, VOD.L, 
-    SAP.DE, RY.TO,  
-    EURUSD=X, USDJPY=X, GBPUSD=X,  
-    BTC-USD, ETH-USD, DOGE-USD,  
-    GC=F, SI=F, HG=F, PL=F,  
-    CL=F, CLT=F, BZT=F, BZ=F, HO=F, RB=F  
-    """
-)
-
 predict_button = st.sidebar.button("🔮 Predict Price")
 
 if predict_button and valid_ticker:
@@ -146,6 +134,19 @@ if predict_button and valid_ticker:
 
     except Exception as e:
         st.error(f"❌ Error: {e}")
+
+st.sidebar.markdown(
+    """
+    **Examples for Input:**  
+    AAPL, RELIANCE.NS, VOD.L, 
+    SAP.DE, RY.TO,  
+    EURUSD=X, USDJPY=X, GBPUSD=X,  
+    BTC-USD, ETH-USD, DOGE-USD,  
+    GC=F, SI=F, HG=F, PL=F,  
+    CL=F, CLT=F, BZT=F, BZ=F, HO=F, RB=F  
+    """
+)
+
 
 st.markdown(
     """
