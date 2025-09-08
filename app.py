@@ -24,6 +24,14 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+st.markdown(
+    """
+    <div style='text-align: center; font-size: 1.2rem; color: red; margin-top: 10px;'>
+        <strong>Disclaimer 👇</strong>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.sidebar.title("🔍 Inputs")
 search_input = st.sidebar.text_input("Enter ticker or company name", value="AAPL")
