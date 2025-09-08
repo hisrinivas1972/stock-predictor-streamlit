@@ -77,7 +77,7 @@ st.sidebar.markdown(
     EURUSD=X, USDJPY=X, GBPUSD=X,  
     BTC-USD, ETH-USD, DOGE-USD,  
     GC=F, SI=F, HG=F, PL=F,  
-    CL=F, BRN=F, HO=F, RB=F  
+    CL=F, CLT=F, BZF=F, BZ=F, HO=F, RB=F  
     """
 )
 
