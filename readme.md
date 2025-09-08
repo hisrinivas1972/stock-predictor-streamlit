@@ -24,8 +24,9 @@ This is a Streamlit-based web application that provides AI-powered price predict
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hisrinivas1972/stock-price-predictor.git
-   cd stock-price-predictor
+   git clone https://github.com/hisrinivas1972/stock-predictor-streamlit.git
+   cd stock-price-streamlit
+   
 Install dependencies:
 
 bash
