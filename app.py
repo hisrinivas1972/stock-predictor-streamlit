@@ -27,7 +27,7 @@ st.markdown(
 st.markdown(
     """
     <div style='text-align: center; font-size: 1.2rem; color: red; margin-top: 10px;'>
-        <strong>Disclaimer 👇</strong>
+        <strong>⚠️ Disclaimer 👇</strong>
     </div>
     """,
     unsafe_allow_html=True
